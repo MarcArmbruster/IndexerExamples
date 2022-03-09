@@ -2,13 +2,10 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     internal class Store<T>
     {
-        private static Dictionary<Guid, IProduct> listedStoreItems = new Dictionary<Guid, IProduct>();
+        private static readonly Dictionary<Guid, IProduct> listedStoreItems = new Dictionary<Guid, IProduct>();
 
         public IProduct this[Guid productId]
         {
@@ -28,8 +25,8 @@
             }
         }
 
-        // alternative: generic indexer
-         
+        // alternative: generic indexer        
+        /*
         public T this[Guid productId] 
         {
             get

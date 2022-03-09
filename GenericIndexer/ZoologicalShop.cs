@@ -19,6 +19,9 @@
                     .Where(i => i.Value.Price == price)
                     .Select(i => i.Value);
         }
+
+        public int Count => shopItems.Count;
+        public decimal TotalValue => shopItems.Sum(i => i.Value.Price);
     }
 }
 
