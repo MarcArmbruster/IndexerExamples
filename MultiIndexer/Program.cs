@@ -1,6 +1,6 @@
 ﻿namespace MultiIndexer
 {
-    public class Prgram
+    public class Program
     {
         private static ChartData chartData = new ChartData();
 

@@ -1,6 +1,6 @@
 ﻿namespace MultiIndexer
 {
-    internal class ChartPoint3D
+    public class ChartPoint3D
     {
         public int X { get; set; } = int.MinValue;
 

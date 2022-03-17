@@ -3,10 +3,9 @@
     using System;
     using System.Collections.Generic;
 
-    internal class Store<T>
+    internal class Store
     {
         private static readonly Dictionary<Guid, IProduct> listedStoreItems = new Dictionary<Guid, IProduct>();
-
         public IProduct this[Guid productId]
         {
             get
@@ -24,26 +23,31 @@
                 listedStoreItems[productId] = value;
             }
         }
+    }
 
-        // alternative: generic indexer        
-        /*
-        public T this[Guid productId] 
+    /// <summary>
+    /// alternative: generic indexer
+    /// </summary>
+    internal class Store<T>
+    {
+        private static readonly Dictionary<Guid, T> listedStoreItems = new Dictionary<Guid, T>();
+
+        public T this[Guid storeItemId] 
         {
             get
             {
-                if (!listedStoreItems.ContainsKey(productId))
+                if (!listedStoreItems.ContainsKey(storeItemId))
                 {
-                    throw new ProductNotFoundException($"No product with ID {productId} available");
+                    throw new ProductNotFoundException($"No store item with ID {storeItemId} available");
                 }
 
-                return listedStoreItems[productId];
+                return listedStoreItems[storeItemId];
             }
 
             set
             {
-                listedStoreItems[productId] = value;
+                listedStoreItems[storeItemId] = value;
             }
         }
-        */
     }
 }

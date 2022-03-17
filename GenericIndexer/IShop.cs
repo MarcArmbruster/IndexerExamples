@@ -1,7 +1,7 @@
 ﻿namespace GenericIndexer
 {
 
-    internal interface IShop<T>
+    public interface IShop<T>
     {
         T this[string ian] { get; set; }
     }

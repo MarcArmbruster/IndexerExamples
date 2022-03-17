@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleIndexer", "SingleInde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericIndexer", "GenericIndexer\GenericIndexer.csproj", "{92C4F019-1EAF-496D-92F7-0FD76F7D499E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfIndexerExample", "WpfIndexerExample\WpfIndexerExample.csproj", "{7BD4961B-724E-41B6-A735-218E5BF4D30D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfIndexerExample", "WpfIndexerExample\WpfIndexerExample.csproj", "{7BD4961B-724E-41B6-A735-218E5BF4D30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexerNames", "IndexerNames\IndexerNames.csproj", "{8E68E83F-66B3-4803-BA16-F284AACCCB7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7BD4961B-724E-41B6-A735-218E5BF4D30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BD4961B-724E-41B6-A735-218E5BF4D30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BD4961B-724E-41B6-A735-218E5BF4D30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E68E83F-66B3-4803-BA16-F284AACCCB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E68E83F-66B3-4803-BA16-F284AACCCB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E68E83F-66B3-4803-BA16-F284AACCCB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E68E83F-66B3-4803-BA16-F284AACCCB7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,13 +3,10 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    internal class ChartData
+    public class ChartData
     {
         private readonly List<ChartPoint3D> data = new List<ChartPoint3D>();
 
-        /// <summary>
-        /// Gets the current number of data points.
-        /// </summary>
         public int NumberOfPoints => this.data.Count;
 
         /// <summary>
