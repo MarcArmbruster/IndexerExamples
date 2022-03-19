@@ -16,8 +16,8 @@
 
         public MainViewModel()
         {
-            this.MyTranslations["lblProduct"] = "Product";
-            this.MyTranslations["lblPrice"] = "Price";
+            this.MyTranslations["keyProduct"] = "Product";
+            this.MyTranslations["keyPrice"] = "Price";
             this.NotifyPropertyChanged(nameof(this.MyTranslations));
         }
     }
